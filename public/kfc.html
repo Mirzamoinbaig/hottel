@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <header>
+        <img src="../public/images/agra.jpg" width="100%" height="150" alt="">
+    </header>
+       
+    <div class="accordion">
+        <div class=" accordion-item">
+            <div class="accordion-header" data-bs-target="#customer" data-bs-toggle="collapse">
+                <button class="btn btn-danger w-100">Customer Support</button>
+            </div>
+            <div class="accordion-collapse collapse ">
+                <div class="accordion-body" id="customer">
+                    <dl>
+                        <dt>customer name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Mobile Number</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" data-bs-target="#meals" data-bs-toggle="collapse">
+                    <button class="btn btn-danger w-100">Select meals</button>
+                </div>
+            </div>
+            <div class="accordion-collapse collapse show" id="meals" data-bs-target="">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <img src="../public/images/agra.jpg" height="350px" alt="">
+                                    <div class="card-header">
+                                        <h2>Burger</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <input type="radio" name="meal" value="burger" class="form-check-input" id="burger"> <b>&#8377;78</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">                                   
+                                        <img src="../public/images/agra.jpg"height="350px" alt="">    
+                                    <div class="card-header">
+                                        <h2>pizza</h2>
+                                    </div>                               
+                                <div class="card-body">
+                                    <input type="radio" name="meal" value="pizza" class="form-check-input" id="pizza"> <b>&#8377;120</b>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="btn btn-danger w-100" data-bs-target="#adon" data-bs-toggle="collapse">Select addons</button>
+                    </div>
+                    <div class="accordion-collapse collapse" id="adon">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card">
+                                        <img src="../public/images/agra.jpg" alt="">                                    
+                                    <div class="card-header">
+                                        <h2>hello</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <input type="checkbox" class="form-check-input" value="hello"> &#8377;500
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <img src="../public/images/agra.jpg" alt="">                                  
+                                    <div class="card-header">
+                                        <h2>moin</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <input type="checkbox" value="moin" class="form-check-input"> &#8377;400
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
